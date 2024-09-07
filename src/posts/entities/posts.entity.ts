@@ -12,5 +12,5 @@ export class PostEntity {
   header: string;
 
   @Column()
-  tags: string[];
+  tags: string;
 }

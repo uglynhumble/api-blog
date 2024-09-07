@@ -9,7 +9,7 @@ export class RequestPostDto {
   username: string;
 
   @Expose()
-  tags: string[];
+  tags: string;
 
   @Expose()
   header: string;

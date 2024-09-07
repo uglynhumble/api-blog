@@ -16,7 +16,7 @@ export class CreatePostDto {
   @Expose()
   @IsNotEmpty()
   @IsString()
-  tags: string[];
+  tags: string;
 
   @Expose()
   @IsNotEmpty()
