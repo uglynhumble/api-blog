@@ -14,7 +14,7 @@ import { PostEntity } from './posts/entities/posts.entity';
       password: '13082004',
       username: 'postgres',
       entities: [PostEntity],
-      database: 'blogdb',
+      database: 'blogdb2',
       synchronize: true,
       logging: true,
     }),
