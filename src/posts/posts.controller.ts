@@ -11,7 +11,7 @@ export class PostsController {
     return this.postsService.CreatePost(createPostDto);
   }
 
-  @Get('id')
+  @Get(':id')
   getPost(id: number) {
     return this.postsService.getPost(id);
   }
@@ -20,7 +20,7 @@ export class PostsController {
   // editPost(updatePostDto: RequestPostDto) {
   //   return this.postsService.editPost(updatePostDto);
   // }
-  @Delete('remove')
+  @Delete('remove/:id')
   deletePost(id: number) {
     return this.postsService.deletePost(id);
   }
