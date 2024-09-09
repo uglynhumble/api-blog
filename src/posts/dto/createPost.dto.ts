@@ -1,5 +1,5 @@
 import { Exclude, Expose } from 'class-transformer';
-import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { IsArray, IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 @Exclude()
 export class CreatePostDto {
@@ -16,10 +16,15 @@ export class CreatePostDto {
   @Expose()
   @IsNotEmpty()
   @IsString()
-  tags: string;
+  tags: string[];
 
   @Expose()
   @IsNotEmpty()
   @IsString()
   header: string;
+
+  @Expose()
+  @IsNotEmpty()
+  @IsArray()
+  text: string;
 }

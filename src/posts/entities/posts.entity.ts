@@ -11,6 +11,9 @@ export class PostEntity {
   @Column()
   header: string;
 
+  @Column('text', { array: true })
+  tags: string[];
+
   @Column()
-  tags: string;
+  text: string;
 }

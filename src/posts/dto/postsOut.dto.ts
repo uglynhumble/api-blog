@@ -9,8 +9,11 @@ export class ResponsePostDto {
   username: string;
 
   @Expose()
-  tags: string;
+  tags: string[];
 
   @Expose()
   header: string;
+
+  @Expose()
+  text: string;
 }
